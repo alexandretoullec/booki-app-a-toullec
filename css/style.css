@@ -611,7 +611,7 @@ footer p{
     }
 
     .search-search input{
-        width: 85%;
+        width: 80%;
         height: 3rem;
         position: relative;
         text-align: left;
@@ -625,7 +625,7 @@ footer p{
     .search-search button{
         border-radius: 15px;
         position: absolute;
-        right: 0;
+        right: 10px;
     }
 
     .button_mobile{
