@@ -471,7 +471,7 @@ footer p{
 /* Medium devices (tablets, less/equal than 1024px) */
 
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
     .main-container{
         max-width: 1440px;
         margin: auto;
@@ -601,6 +601,7 @@ footer p{
 
     .search{
         margin: 0 1rem 0;
+        width: 90%;
     }
 
     .search-search{
@@ -611,7 +612,7 @@ footer p{
     }
 
     .search-search input{
-        width: 80%;
+        width: 85%;
         height: 3rem;
         position: relative;
         text-align: left;
