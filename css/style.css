@@ -13,6 +13,7 @@ html {
     --main-color: #0065FC;
     --bg-white:#ffffff;
     --main-bg-color: #F2F2F2;
+    --light-grey:#D9D9D9;
     --grey:grey;
     --filter-bg-color: #DEEBFF;
     --black:#000000;
@@ -76,7 +77,7 @@ body {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 2rem;  
+        margin-bottom: 3rem;  
     }
 
     .navbar__logo img{
@@ -126,14 +127,14 @@ body {
 
     .search__description h1{
         font-weight: 700;
-        font-size: var(--fs-search-filter);
+        font-size: var(--fsh);
         line-height: 26px;
         margin-bottom: 0.5rem;
     }
 
     .search__description p{
         font-weight: 400;
-        font-size: var(--fs-filter-choice);
+        font-size: var(--fssh);
         line-height: 19px;
     }
 
@@ -191,7 +192,7 @@ body {
     /****** Filtres ***********/
 
     .filter{
-        margin-top: 4.5rem;
+        margin-top: 2rem;
         display: flex;
         flex-direction: row;
         align-content: center;
@@ -202,15 +203,13 @@ body {
         align-items: center;
     }
 
-    .filter__title h1{
+    .filter__title h2{
         margin-right: 1rem;
         font-weight: 700;
         font-size: var(--fs-search-filter);
         line-height: 21px;
     }
-
-
-
+    
     .filter__choices{
         width: 100%;
         display: flex;
@@ -223,14 +222,14 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        border: 2px solid #D9D9D9;
+        border: 2px solid var(--light-grey);
         border-radius: 25px;
         padding: 4px 19px;
         margin-right: 1rem;
     }
 
     .filter__choices__choice:hover{
-        background: #DEEBFF;
+        background: var(--filter-bg-color);
     }
 
     .filter__choices__choice i{
@@ -255,7 +254,7 @@ body {
         justify-content: center;
         height: 2px;
         width: 2px;
-        border: 1px solid #D9D9D9;
+        border: 1px solid var(--light-grey);
         border-radius: 50%;
         padding: 15px;
         margin-right: 1px;
@@ -271,27 +270,27 @@ body {
     }
 
 
-/****** Hebergements And Populaires ***********/
-.hebergements-and-populaires {
+/****** accommodation And popular ***********/
+.accommodation-and-popular {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
 }
 
-.hebergements-and-populaires .hebergements,
-.hebergements-and-populaires .populaires {
+.accommodation-and-popular .accommodation,
+.accommodation-and-popular .popular {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
     
 }
 
-/****** Hebergements ***********/
-.hebergements {
+/****** accommodation ***********/
+.accommodation {
     width: 65%;
 }
 
-.hebergements__cards{
+.accommodation__cards{
     margin-top: 1.5rem;
     display: flex;
     flex-wrap: wrap;
@@ -299,7 +298,7 @@ body {
     align-items: center;
 }
 
-.hebergements__cards__card{
+.accommodation__cards__card{
     display: flex;
     flex-direction: column;
     background: var(--bg-white);
@@ -310,18 +309,18 @@ body {
     cursor: pointer;
 }
 
-.hebergements__cards__card img{
+.accommodation__cards__card img{
     object-fit: cover;
     height: 8rem;
     width: 100%;
     border-radius: 15px 15px 0 0;
 }
 
-.hebergements__cards__card__content__rating i:last-of-type{
+.accommodation__cards__card__content__rating i:last-of-type{
     color: var(--main-bg-color);
 }
 
-.hebergements__cards__card__content{
+.accommodation__cards__card__content{
     padding: 0.5rem 0 0.5rem 0.2rem;
     height: 6rem;
     display: flex;
@@ -330,11 +329,11 @@ body {
     align-items: flex-start;
 }
 
-.hebergements__cards__card__content h3{
+.accommodation__cards__card__content h3{
     margin-bottom: 0.5rem;
 }
 
-.hebergements__showmore button{
+.accommodation__showmore button{
     cursor: pointer;
     border: none;
     font-weight: 700;
@@ -342,37 +341,37 @@ body {
     line-height: 21px;
 }
 
-/****** Populaires ***********/
-.populaires {
+/****** popular ***********/
+.popular {
     width: 32%;
 }
 
-.populaires__title {
+.popular__title {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.populaires__cards{
+.popular__cards{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.populaires__cards__card{
+.popular__cards__card{
     display: flex;
     margin-top: 33px;
     cursor: pointer;
 }
 
-.populaires__cards__card img {
+.popular__cards__card img {
     width: 33%;
     height: 136px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
 
-.populaires__cards__card__content {
+.popular__cards__card__content {
     width: 67%;
     padding-left: 15px;
     display: flex;
@@ -381,20 +380,20 @@ body {
     box-sizing: border-box;
 }
 
-.populaires__cards__card__content h3 {
+.popular__cards__card__content h3 {
     margin-top: 10px;
     margin-bottom: 4px;
 }
 
-.populaires__cards__card__content p {
+.popular__cards__card__content p {
     margin: 0;
 }
 
-.populaires__cards__card__content .card-rating {
+.popular__cards__card__content .card-rating {
     margin-bottom: 5px;
 }
 
-.populaires__cards__card__content__rating i:last-of-type{
+.popular__cards__card__content__rating i:last-of-type{
     color: var(--main-bg-color);
 }
 
@@ -473,7 +472,7 @@ footer p{
 
 
 /****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
+
 
 
 @media screen and (min-width: 1025px) {
@@ -483,6 +482,8 @@ footer p{
     }
 }
 
+/* Medium devices (tablets, less/equal than 1024px) */
+
 @media screen and (max-width: 1024px) {
     .main-container{
         margin: 0;
@@ -491,11 +492,15 @@ footer p{
 
     .navbar{
         align-items: flex-start;
-        
     }
 
-    .navbar__links li{
-        padding-top: 0.5rem;
+    .navbar__logo{
+        padding-top: 1rem;
+    }
+
+    .navbar__links li,
+    .navbar__links a{
+        padding-top: 1rem;
     }
 
     .filter{
@@ -506,42 +511,42 @@ footer p{
         margin-bottom: 1rem;
     }
 
-    .hebergements-and-populaires {
+    .accommodation-and-popular {
         flex-direction: column;
     }
 
-    .hebergements {
+    .accommodation {
         width: 100%;
     }
 
-    .hebergements__cards__card img{
+    .accommodation__cards__card img{
         height: 7rem;
     }
 
-    .populaires {
+    .popular {
         width: 100%;
         margin-top: 50px;
     }
 
-    .populaires__cards {
+    .popular__cards {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .populaires__cards .card {
+    .popular__cards .card {
         width: 32%;
     }
 
-    .populaires__cards img{
+    .popular__cards img{
         width:40%
     }
 
-    .populaires__cards .card-title h3{
+    .popular__cards .card-title h3{
         font-size: var(--fs-search-filter);
     }
 
-    .populaires__cards .card-subtitle {
+    .popular__cards .card-subtitle {
         font-size: var(--fst);
     }
 
@@ -703,35 +708,35 @@ footer p{
 
     
 
-    /* ******* hébergments et populaires ******** */
+    /* ******* hébergments et popular ******** */
 
-    .hebergements-and-populaires {
+    .accommodation-and-popular {
         flex-direction: column-reverse;
     }
     
-    .hebergements-and-populaires .hebergements{
+    .accommodation-and-popular .accommodation{
         background-color: white;
     }
 
 
-        /******** populaires  ***********/
+        /******** popular  ***********/
 
-    .hebergements-and-populaires .populaires {
+    .accommodation-and-popular .popular {
         background-color: var(--main-bg-color);
         border-radius: 0px;
         padding: 30px;
     }
     
-    .populaires__cards{
+    .popular__cards{
         flex-direction: column;
     }
     
-    .populaires__cards .card {
+    .popular__cards .card {
         flex-direction: row;
         width: 100%;
     }
     
-    .populaires__cards img {
+    .popular__cards img {
         width: 30%;
         height: 136px;
         border-top-left-radius: 20px;
@@ -741,24 +746,24 @@ footer p{
 
         /******** hébergements  ***********/
 
-    .hebergements{
+    .accommodation{
         background: white;
 
     }
 
-    .hebergements__cards{
+    .accommodation__cards{
         flex-direction: column;
     }
 
-    .hebergements__cards__card{
+    .accommodation__cards__card{
         width: 100%;
     }
 
-    .hebergements__cards__card img{
+    .accommodation__cards__card img{
         height: 10rem;
     }
 
-    .hebergements-showmore button{
+    .accommodation-showmore button{
         background: white;
     }
 
